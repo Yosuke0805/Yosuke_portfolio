@@ -29,18 +29,19 @@ def ask_bot(input_text):
         openai_api_key=openai.api_key,
     )
     llm_predictor = LLMPredictor(llm=llm)
+    # configure settings of LLM
     service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor)
-    
+
     # load index
-    index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)    
-    
+    index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
+
     # query LlamaIndex and GPT-3.5 for the AI's response
     PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in her job search by providing recruiters with relevant and concise information. 
     If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}. 
     Don't put "Buddy" or a breakline in the front of your answer.
     Human: {input}
     """
-    
+
     output = index.as_query_engine().query(PROMPT_QUESTION.format(input=input_text))
     print(f"output: {output}")
     return output.response
@@ -61,8 +62,7 @@ if user_input:
     st.info(ask_bot(user_input))
 
 # -----------------  loading assets  ----------------- #
-st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
-    
+st.sidebar.markdown('images/profile_photo.jpg',unsafe_allow_html=True)
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
