@@ -24,11 +24,14 @@ st.title("🫶 Hobbies")
 col1, col2, col3 = st.columns(3)
 
 with col1:
+   st.write("Traveling")
    st.image(img_1)
-   
+
 with col2:
+   st.write("Snowboarding")
    st.image(img_2)
 
 with col3:
+   st.write("Workout")
    st.image(img_3)
 
