@@ -7,7 +7,7 @@ info = {
    "Tableau":"https://public.tableau.com/app/profile/vickytc/viz/SunnybrookTeam/Overview",
    "Medium":"https://medium.com/@vicky-note/about",
    "City":"Tokyo, Japan",
-   "Photo":"""<a href=\"https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/\"><img src=\"images/profile_photo.jpg\" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
+   "Photo":"""<a href=\"https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/\"><img src=\"images/profile_photo.jpg" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
    "Email": "kawazoe.yosuke@gmail.com"
 }
 
