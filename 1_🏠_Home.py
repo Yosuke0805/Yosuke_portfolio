@@ -64,7 +64,8 @@ if user_input:
 # -----------------  loading assets  ----------------- #
 # load profile image
 img_profile = Image.open("images/profile_photo.jpg")
-st.sidebar.markdown(img_profile,unsafe_allow_html=True)
+with st.sidebar:
+    st.image(img_profile, width=200)
 
 def load_lottieurl(url: str):
     r = requests.get(url)
