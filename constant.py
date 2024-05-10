@@ -2,11 +2,12 @@ info = {
    "Pronoun": "him", 
    "Name": "Yosuke",
    "Full_Name": "Yosuke Kawazoe",
-   "Intro": "A Tech Educator and AI Enthusiast at cognitiveclass.ai",
-   "About":"Hey there, I'm Yosuke! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. Check out my free courses and projects on cognitiveclass.ai: https://cognitiveclass.ai/",
+   "Intro": "A Data Scientist/AI engineer and AI Enthusiast at Nomura Research Institute",
+   "About":"Hey there, I'm Yosuke! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. I would love to work in English speaking country because that is my dream. Now, I have Youth Mobility Scheme Visa starting from 07/2024. Check out my LinkedIn: https://cognitiveclass.ai/",
    "Tableau":"https://public.tableau.com/app/profile/vickytc/viz/SunnybrookTeam/Overview",
    "Medium":"https://medium.com/@vicky-note/about",
    "City":"Tokyo, Japan",
+   # TODO: Upload image on cloud to load by URL
    "Photo":"""<a href=\"https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/\"><img src=\"images/profile_photo.jpg" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
    "Email": "kawazoe.yosuke@gmail.com"
 }

@@ -10,9 +10,9 @@ local_css("style/style.css")
 
 st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
-img_1 = Image.open("images/1.jpg")
-img_2 = Image.open("images/2.png")
-img_3 = Image.open("images/3.png")
+img_1 = Image.open("images/Cappadocia.jpeg")
+img_2 = Image.open("images/snowboading.jpg")
+img_3 = Image.open("images/workout.JPG")
 
 st.title("🫶 Hobbies")
 
