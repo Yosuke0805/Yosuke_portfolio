@@ -62,7 +62,10 @@ if user_input:
     st.info(ask_bot(user_input))
 
 # -----------------  loading assets  ----------------- #
-st.sidebar.markdown('images/profile_photo.jpg',unsafe_allow_html=True)
+# load profile image
+img_profile = Image.open("images/profile_photo.jpg")
+st.sidebar.markdown(img_profile,unsafe_allow_html=True)
+
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
