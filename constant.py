@@ -1,14 +1,14 @@
 info = {
-   "Pronoun": "her", 
-   "Name": "Vicky",
-   "Full_Name": "Vicky Kuo",
+   "Pronoun": "him", 
+   "Name": "Yosuke",
+   "Full_Name": "Yosuke Kawazoe",
    "Intro": "A Tech Educator and AI Enthusiast at cognitiveclass.ai",
-   "About":"Hey there, I'm Vicky! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. Check out my free courses and projects on cognitiveclass.ai: https://cognitiveclass.ai/",
+   "About":"Hey there, I'm Yosuke! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. Check out my free courses and projects on cognitiveclass.ai: https://cognitiveclass.ai/",
    "Tableau":"https://public.tableau.com/app/profile/vickytc/viz/SunnybrookTeam/Overview",
    "Medium":"https://medium.com/@vicky-note/about",
-   "City":"Toronto, Canada",
-   "Photo":"""<a href=\"https://www.linkedin.com/in/vicky-tck/\"><img src=\"https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/profile.png" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
-   "Email": "vicky.kuo.contact@gmail.com"
+   "City":"Tokyo, Japan",
+   "Photo":"""<a href=\"https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/\"><img src=\"image/profile_photo.jpg" width=\"200\"   alt=\"Profile\" title=\"Profile\"></a>""",
+   "Email": "kawazoe.yosuke@gmail.com"
 }
 
 embed_rss= {
