@@ -84,7 +84,7 @@ lottie_gif = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_x17yb
 python_lottie = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_2znxgjyt.json")
 java_lottie = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_zh6xtlj9.json")
 my_sql_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf30_w11f2rwn.json")
-git_lottie = load_lottieurl("https://lottie.host/675f204d-ca95-46e8-942d-81e40b397f68/WH2r7jsdcN.json")
+cloud_lottie = load_lottieurl("https://lottie.host/675f204d-ca95-46e8-942d-81e40b397f68/WH2r7jsdcN.json")
 github_lottie = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_6HFXXE.json")
 docker_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf30_35uv2spq.json")
 figma_lottie = load_lottieurl("https://lottie.host/5b6292ef-a82f-4367-a66a-2f130beb5ee8/03Xm3bsVnM.json")
@@ -124,7 +124,7 @@ with st.container():
     with col3:
         st_lottie(my_sql_lottie,height=70,width=70, key="mysql", speed=2.5)
     with col4:
-        st_lottie(git_lottie,height=70,width=70, key="git", speed=2.5)
+        st_lottie(cloud_lottie,height=70,width=70, key="git", speed=2.5)
     with col1:
         st_lottie(github_lottie,height=50,width=50, key="github", speed=2.5)
     with col2:
