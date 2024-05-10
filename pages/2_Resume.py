@@ -1,14 +1,20 @@
 import streamlit as st
 import base64
+from PIL import Image
 from constant import *
 
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-        
+
 local_css("style/style.css")
 
-st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
+# load profile image
+img_profile = Image.open("images/profile_photo.jpg")
+with st.sidebar:
+    st.image(img_profile, width=200)
+# TODO: Upload image on cloud to load by URL
+# st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
 st.title("📝 Resume")
 

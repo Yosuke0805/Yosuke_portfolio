@@ -8,7 +8,12 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
+# load profile image
+img_profile = Image.open("images/profile_photo.jpg")
+with st.sidebar:
+    st.image(img_profile, width=200)
+# TODO: Upload image on cloud to load by URL
+# st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
 img_1 = Image.open("images/Cappadocia.jpeg")
 img_2 = Image.open("images/snowboading.jpg")

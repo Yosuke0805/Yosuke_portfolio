@@ -3,7 +3,7 @@ info = {
    "Name": "Yosuke",
    "Full_Name": "Yosuke Kawazoe",
    "Intro": "A Data Scientist/AI engineer and AI Enthusiast at Nomura Research Institute",
-   "About":"Hey there, I'm Yosuke! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. I would love to work in English speaking country because that is my dream. Now, I have Youth Mobility Scheme Visa starting from 07/2024. Check out my LinkedIn: https://cognitiveclass.ai/",
+   "About":"Hey there, I'm Yosuke! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. I would love to work in English speaking country because that is my dream. Now, I have Youth Mobility Scheme Visa starting from 07/2024. Check out my LinkedIn: https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/",
    "Tableau":"https://public.tableau.com/app/profile/vickytc/viz/SunnybrookTeam/Overview",
    "Medium":"https://medium.com/@vicky-note/about",
    "City":"Tokyo, Japan",
