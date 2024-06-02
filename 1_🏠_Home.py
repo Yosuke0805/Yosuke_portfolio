@@ -80,20 +80,9 @@ if user_input:
   if openai_api_key.startswith('sk-'):
     try:
         st.info(ask_bot(user_input))
-    except openai.error.OpenAIError as e:
-        if isinstance(e, openai.error.RateLimitError):
-            st.error("Rate limit exceeded. Please check your plan and billing details.")
-        elif isinstance(e, openai.error.InsufficientQuotaError):
-            st.error("Insufficient quota. Please check your plan and billing details.")
-        else:
-            st.error("An error occurred with the OpenAI API.")
-        st.error(f"Error details: {e}")
     except Exception as e:
-        st.error("An unexpected error occurred.")
-        st.error(f"Error details: {e}")
-    # except Exception as e:
-    #     st.warning('⚠️Please try again!! GPT API is kind of busy now!!', icon='⚠')
-    #     st.write(e)
+        st.warning('⚠️Please try again!! GPT API is kind of busy now!!', icon='⚠')
+        st.write(e)
 
 # -----------------  loading assets  ----------------- #
 # load profile image
