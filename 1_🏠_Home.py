@@ -7,6 +7,7 @@ from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor
 from constant import *
 from PIL import Image
 import openai
+from openai.error import RateLimitError
 from langchain.chat_models import ChatOpenAI
 # ------------------------------------------------------------
 # ★★★★★★  load tokenizer from local ★★★★★★
@@ -55,7 +56,7 @@ def ask_bot(input_text):
     index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
 
     # query LlamaIndex and GPT-3.5 for the AI's response
-    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in her job search by providing recruiters with relevant and concise information. 
+    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in his job search by providing recruiters with relevant and concise information. 
     If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}. 
     Don't put "Buddy" or a breakline in the front of your answer.
     Human: {input}
@@ -78,7 +79,11 @@ if user_input:
   if not openai_api_key.startswith('sk-'):
     st.warning('⚠️Please enter your OpenAI API key on the sidebar.', icon='⚠')
   if openai_api_key.startswith('sk-'):
-    st.info(ask_bot(user_input))
+    try:
+        st.info(ask_bot(user_input))
+    except RateLimitError as e:
+        print("Please try again!! GPT API is kind of busy now!!")
+        print(e)
 
 # -----------------  loading assets  ----------------- #
 # load profile image
