@@ -8,6 +8,25 @@ from constant import *
 from PIL import Image
 import openai
 from langchain.chat_models import ChatOpenAI
+# ------------------------------------------------------------
+# ★★★★★★  load tokenizer from local ★★★★★★
+# ------------------------------------------------------------
+import nltk
+from nltk.data import find
+
+# Set the path to the nltk_data directory
+nltk_data_path = './nltk_data'
+nltk.data.path.append(nltk_data_path)
+
+# Ensure 'punkt' tokenizer is available
+try:
+    find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', download_dir=nltk_data_path)
+# ------------------------------------------------------------
+# ★★★★★★  load tokenizer from local ★★★★★★
+# ------------------------------------------------------------
+
 
 st.set_page_config(page_title='Template' ,layout="wide",page_icon='👧🏻')
 
