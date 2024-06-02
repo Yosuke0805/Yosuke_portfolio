@@ -80,11 +80,13 @@ if user_input:
   if openai_api_key.startswith('sk-'):
     try:
         st.info(ask_bot(user_input))
-    except openai.error.RateLimitError as e:
-        st.error("Rate limit exceeded. Please check your plan and billing details.")
-        st.error(f"Error details: {e}")
-    except openai.error.InsufficientQuotaError as e:
-        st.error("Insufficient quota. Please check your plan and billing details.")
+    except openai.error.OpenAIError as e:
+        if isinstance(e, openai.error.RateLimitError):
+            st.error("Rate limit exceeded. Please check your plan and billing details.")
+        elif isinstance(e, openai.error.InsufficientQuotaError):
+            st.error("Insufficient quota. Please check your plan and billing details.")
+        else:
+            st.error("An error occurred with the OpenAI API.")
         st.error(f"Error details: {e}")
     except Exception as e:
         st.error("An unexpected error occurred.")
