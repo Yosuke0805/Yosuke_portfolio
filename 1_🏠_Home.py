@@ -82,7 +82,7 @@ if user_input:
         st.info(ask_bot(user_input))
     except Exception as e:
         st.warning('⚠️Please try again!! GPT API is kind of busy now!!', icon='⚠')
-        print(e)
+        st.write(e)
 
 # -----------------  loading assets  ----------------- #
 # load profile image
