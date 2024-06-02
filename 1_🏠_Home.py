@@ -81,7 +81,7 @@ if user_input:
     try:
         st.info(ask_bot(user_input))
     except Exception as e:
-        print("Please try again!! GPT API is kind of busy now!!")
+        st.warning('⚠️Please try again!! GPT API is kind of busy now!!', icon='⚠')
         print(e)
 
 # -----------------  loading assets  ----------------- #
