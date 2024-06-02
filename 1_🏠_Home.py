@@ -7,7 +7,6 @@ from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor
 from constant import *
 from PIL import Image
 import openai
-from openai.error import RateLimitError
 from langchain.chat_models import ChatOpenAI
 # ------------------------------------------------------------
 # ★★★★★★  load tokenizer from local ★★★★★★
@@ -81,7 +80,7 @@ if user_input:
   if openai_api_key.startswith('sk-'):
     try:
         st.info(ask_bot(user_input))
-    except RateLimitError as e:
+    except Exception as e:
         print("Please try again!! GPT API is kind of busy now!!")
         print(e)
 
