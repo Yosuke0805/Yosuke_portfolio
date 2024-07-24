@@ -18,7 +18,7 @@ with st.sidebar:
 
 st.title("📝 Resume")
 
-st.write("[Click here if it's blocked by your browser](https://drive.google.com/file/d/1Ns9-zQT8p0S4uGfpk4JvAKsavCJL2hfn/viewhttps://drive.google.com/file/d/19MUW4gbdJEVr8CpkZBnsHkFiUXaJsf-Z/view?usp=drive_link?usp=sharing)")
+st.write("[Click here if it's blocked by your browser](https://drive.google.com/file/d/19MUW4gbdJEVr8CpkZBnsHkFiUXaJsf-Z/view?usp=sharing)")
 
 with open("images/CV.pdf","rb") as f:
       base64_pdf = base64.b64encode(f.read()).decode('utf-8')
