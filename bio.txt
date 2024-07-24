@@ -1,16 +1,18 @@
 About Yosuke:
-Yosuke is a seasoned professional with expertise in AI, Data Science, Blockchain, and Cloud technologies. Holding an undergraduate degree in Computer Science from the University of Techville (2010), Yosuke is committed to delivering innovative solutions and offers valuable resources at cognitiveclass.ai.
+Yosuke is a seasoned professional with expertise in AI, Data Science, Cloud technologies, and Infrastructure. Holding an master degree in Geographical Information Science from the University of Tokyo Metropolitan University (2022), Yosuke was committed to learn statistics, machine learning, and deep learning every single day and wriote a thesis called "
+A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa".
 
 Work Experience:
-Data Scientist at NRI (2022-2024); Machine Learning Engineer at Total Materia (2021)
+Data Scientist at Nomura Research Institute aka NRI (2022-2024); Machine Learning Engineer at Total Materia (2021)
 
 Career Goal:
-Yosuke's career goal is to leverage their expertise in AI and emerging technologies to drive meaningful innovation and create solutions that positively impact businesses and society.
+Yosuke's career goal is to become an AI full-stack engineer who can build infrastructures, create a variety of machine learning models, and implement them into applications for users to utilize AI to automate.
 
 Skills: 
-AI, Data Science, Statistic, Cloud, Python
+AI, Machine learning, Deep learning, Data Science, Statistic, Cloud, Python
 
 Certification:
+Google Cloud Professional Machine learning Engineer(2024)
 JDLA Deep Learning for ENGINEER (2024)
 Google Cloud Professional Data Engineer(2023)
 Applied Information technology Engineer Examination(2023)
@@ -24,25 +26,31 @@ IELTS Academic overall 6.5 (Listening 6.0, Reading 6.0, Speaking 7.5, Writing 5.
 
 
 Achievements:
-Spearheaded AI projects at IBM, resulting in a 30% increase in user engagement.
-Utilized IBM's watsonx service to help over 1000 companies from various domains automate their HR processes, from hiring to onboarding, contributing to a 100% positive feedback rate from companies.
+Spearheaded AI projects at NRI, developing several AI solutions and implemented into system.
+Specifically,
+- Built system environment on a server from scratch, developed customer retrieval application and deployed on the environment. 
+- Developed an application for creating meeting minutes automatically with Gemini API.
+- Created solutions to understand consumer characteristics through constructing a multi-cloud data analysis environment with advanced security.
+- Contributed to transforming the R&D project into an investment activity that validates its worth and creates actual solutions for real clients.
+- Implemented logic and improved model’s accuracy for the development of an AI system to solve customers’ problems, ultimately obtaining customer approval and progressing toward system implementation.
+
 
 Contact:
 LinkedIn: https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/
 Phone: +81-80-4717-8940
-Location: Tokyo, Japan
+Location: London, United Kingdam
 
 Strengths and Advantages:
-Yosuke's strengths lie in a profound passion for technology, innovative problem-solving, and client-centric solutions.
+Yosuke's strengths lie in a profound passion for technology, innovative problem-solving, delevering values on time, and client-centric solutions.
 
 Weaknesses and Disadvantages:
 Yosuke's unwavering pursuit of excellence may occasionally lead to in-depth analysis, but it ensures the delivery of high-quality services.
 
 Interests and Hobbies:
-Yosuke's passion for technology extends into leisure hours, where they delve into the cutting-edge realm of GenAI, continuously pushing the boundaries of what can be achieved in various projects. In addition, Yosuke finds joy in the simple pleasures of life, such as walking their dogs, swimming, and sharing coffee moments with friends and family.
+Yosuke's passion for technology extends into leisure hours, where they delve into the cutting-edge realm of GenAI, continuously pushing the boundaries of what can be achieved in various projects. In addition, Yosuke finds joy in enhancing himself by experiencing new things and getting out of comfort zone to explore, such as snowboarding, traveling in new countries, and going to gym to train himself.
 
 Portfolio:
-Explore Yosuke's portfolio of innovative projects at cognitiveclass.ai, showcasing expertise and tailored solutions. This website also serves as a showcase for some of Yosuke's remarkable projects. Constructed using generative AI and Python, the website aims to inspire visitors with innovative ideas on seamlessly integrating generative AI into their own portfolio websites. Feel free to explore and ignite your creativity!
+Explore Yosuke's portfolio of innovative projects at his github, showcasing expertise and tailored solutions. Many cases cannot be shown due to the trade secret, however it also serves as personal projects from some of Yosuke's remarkable projects. Constructed using generative AI and Python, the website aims to inspire visitors with innovative ideas on seamlessly integrating generative AI into their own portfolio websites. Feel free to explore and ignite your creativity!
 
 Availability:
 Yosuke is actively seeking new opportunities and is ready to start immediately.

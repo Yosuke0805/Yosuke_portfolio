@@ -28,7 +28,7 @@ except LookupError:
 # ------------------------------------------------------------
 
 
-st.set_page_config(page_title='Template' ,layout="wide",page_icon='👧🏻')
+st.set_page_config(page_title='Template', layout="wide", page_icon='👧🏻')
 
 # -----------------  chatbot  ----------------- #
 # Set up the OpenAI key
@@ -55,7 +55,7 @@ def ask_bot(input_text):
     index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
 
     # query LlamaIndex and GPT-3.5 for the AI's response
-    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in her job search by providing recruiters with relevant and concise information. 
+    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in his job search by providing recruiters with relevant and concise information. 
     If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}. 
     Don't put "Buddy" or a breakline in the front of your answer.
     Human: {input}
@@ -73,12 +73,17 @@ def get_text():
 #st.markdown("Chat With Me Now")
 user_input = get_text()
 
+# get the response to user's questions by calling the ask_bot function
 if user_input:
   #text = st.text_area('Enter your questions')
   if not openai_api_key.startswith('sk-'):
     st.warning('⚠️Please enter your OpenAI API key on the sidebar.', icon='⚠')
   if openai_api_key.startswith('sk-'):
-    st.info(ask_bot(user_input))
+    try:
+        st.info(ask_bot(user_input))
+    except Exception as e:
+        st.warning('⚠️Please check you API key!! It can be expired or invalid!!', icon='⚠')
+        st.write(e)
 
 # -----------------  loading assets  ----------------- #
 # load profile image
@@ -106,7 +111,7 @@ my_sql_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf
 cloud_lottie = load_lottieurl("https://lottie.host/675f204d-ca95-46e8-942d-81e40b397f68/WH2r7jsdcN.json")
 github_lottie = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_6HFXXE.json")
 docker_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf30_35uv2spq.json")
-figma_lottie = load_lottieurl("https://lottie.host/5b6292ef-a82f-4367-a66a-2f130beb5ee8/03Xm3bsVnM.json")
+linux_lottie = load_lottieurl("https://lottie.host/46c43062-2807-4c79-925a-2442d54b1374/IGTBiNICNs.json")
 js_lottie = load_lottieurl("https://lottie.host/fc1ad1cd-012a-4da2-8a11-0f00da670fb9/GqPujskDlr.json")
 
 
@@ -149,7 +154,7 @@ with st.container():
     with col2:
         st_lottie(docker_lottie,height=70,width=70, key="docker", speed=2.5)
     with col3:
-        st_lottie(figma_lottie,height=50,width=50, key="figma", speed=2.5)
+        st_lottie(linux_lottie,height=50,width=50, key="figma", speed=2.5)
     with col4:
         st_lottie(js_lottie,height=50,width=50, key="js", speed=1)
     
