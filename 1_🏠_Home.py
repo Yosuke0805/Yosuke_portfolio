@@ -205,6 +205,13 @@ with st.container():
 #         st.markdown(""" <a href={}> <em>🔗 access to the link </a>""".format(info['Medium']), unsafe_allow_html=True)
 
 # -----------------  endorsement  ----------------- #
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+image_path = "images/demand_forecasting.jpg"
+image_base64 = get_base64_of_bin_file(image_path)
 with st.container():
     # Divide the container into three columns
     col1,col2,col3 = st.columns([0.475, 0.475, 0.05])
@@ -268,7 +275,7 @@ with st.container():
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                <img src="images/sns_analysis.jpg" style="width:100%">
+                <img src="data:image/png;base64,{image_base64}" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
@@ -332,17 +339,12 @@ with st.container():
             """,
                 height=270,
         )
-        def get_base64_of_bin_file(bin_file):
-            with open(bin_file, 'rb') as f:
-                data = f.read()
-            return base64.b64encode(data).decode()
+
 
         image_path = "images/customer_behavior_analysis.jpg"
         image_base64 = get_base64_of_bin_file(image_path)
         image_html = f'<img src="data:image/png;base64,{image_base64}" style="width:100%">'
         st.markdown(image_html, unsafe_allow_html=True,)
-        tmp = Image.open("images/customer_behavior_analysis.jpg")
-        st.image(tmp, width=200)
 
 # -----------------  contact  ----------------- #
     with col2:
