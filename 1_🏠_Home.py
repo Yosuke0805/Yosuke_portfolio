@@ -212,6 +212,7 @@ with st.container():
         # Add a subheader to introduce the coworker endorsement slideshow
         st.subheader("👄 My past Projects")
         st.markdown(endorsements["img1"])
+        print(endorsements["img1"])
         # Embed an HTML component to display the slideshow
         components.html(
         f"""
