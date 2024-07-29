@@ -8,6 +8,7 @@ from constant import *
 from PIL import Image
 import openai
 from langchain.chat_models import ChatOpenAI
+import base64
 # ------------------------------------------------------------
 # ★★★★★★  load tokenizer from local ★★★★★★
 # ------------------------------------------------------------
