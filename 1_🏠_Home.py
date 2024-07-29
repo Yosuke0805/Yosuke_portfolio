@@ -211,11 +211,11 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 image1 = endorsements['img1']
-image1_base64 = get_base64_of_bin_file(image_path)
+image1_base64 = get_base64_of_bin_file(image1)
 image2 = endorsements['img2']
-image2_base64 = get_base64_of_bin_file(image_path)
+image2_base64 = get_base64_of_bin_file(image2)
 image3 = endorsements['img3']
-image3_base64 = get_base64_of_bin_file(image_path)
+image3_base64 = get_base64_of_bin_file(image3)
 
 with st.container():
     # Divide the container into three columns
