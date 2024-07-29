@@ -331,7 +331,15 @@ with st.container():
             """,
                 height=270,
         )
-        st.markdown(f"""<img src="{endorsements["img3"]}" style="width:100%">""",unsafe_allow_html=True,)
+        def get_base64_of_bin_file(bin_file):
+            with open(bin_file, 'rb') as f:
+                data = f.read()
+            return base64.b64encode(data).decode()
+
+        image_path = "images/customer_behavior_analysis.jpg"
+        image_base64 = get_base64_of_bin_file(image_path)
+        image_html = f'<img src="data:image/png;base64,{image_base64}" style="width:100%">'
+        st.markdown(image_html, unsafe_allow_html=True,)
         tmp = Image.open("images/customer_behavior_analysis.jpg")
         st.image(tmp, width=200)
 
