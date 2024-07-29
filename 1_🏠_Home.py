@@ -329,7 +329,7 @@ with st.container():
             </html> 
 
             """
-            components.html(html_code, height=500)
+        components.html(html_code, height=500)
     #           height=270,
     #)  
 
