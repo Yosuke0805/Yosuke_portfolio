@@ -210,8 +210,13 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-image_path = "images/demand_forecasting.jpg"
-image_base64 = get_base64_of_bin_file(image_path)
+image1 = endorsements['img1']
+image1_base64 = get_base64_of_bin_file(image_path)
+image2 = endorsements['img2']
+image2_base64 = get_base64_of_bin_file(image_path)
+image3 = endorsements['img3']
+image3_base64 = get_base64_of_bin_file(image_path)
+
 with st.container():
     # Divide the container into three columns
     col1,col2,col3 = st.columns([0.475, 0.475, 0.05])
@@ -275,15 +280,15 @@ with st.container():
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                <img src="data:image/png;base64,{image_base64}" style="width:100%">
+                <img src="data:image/png;base64,{image1_base64}" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                <img src="{endorsements["img2"]}" style="width:100%">
+                <img src="data:image/png;base64,{image2_base64}" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                <img src="{endorsements["img3"]}" style="width:100%">
+                <img src="data:image/png;base64,{image3_base64}" style="width:100%">
                 </div>
 
             </div>
@@ -340,11 +345,6 @@ with st.container():
                 height=270,
         )
 
-
-        image_path = "images/customer_behavior_analysis.jpg"
-        image_base64 = get_base64_of_bin_file(image_path)
-        image_html = f'<img src="data:image/png;base64,{image_base64}" style="width:100%">'
-        st.markdown(image_html, unsafe_allow_html=True,)
 
 # -----------------  contact  ----------------- #
     with col2:
