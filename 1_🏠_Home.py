@@ -332,7 +332,7 @@ with st.container():
                 height=270,
         )
         st.markdown(f"""<img src="{endorsements["img3"]}" style="width:100%">""",unsafe_allow_html=True,)
-        tmp = Image.open(f'"{endorsements["img3"]}"')
+        tmp = Image.open("images/customer_behavior_analysis.jpg")
         st.image(tmp, width=200)
 
 # -----------------  contact  ----------------- #
