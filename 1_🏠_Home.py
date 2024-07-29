@@ -212,8 +212,8 @@ with st.container():
         # Add a subheader to introduce the coworker endorsement slideshow
         st.subheader("👄 My past Projects")
         # Embed an HTML component to display the slideshow
-        components.html(
-        f"""
+        #components.html(
+        html_code = f"""
         <!DOCTYPE html>
         <html>
         <head>
@@ -328,9 +328,10 @@ with st.container():
             </body>
             </html> 
 
-            """,
-                height=270,
-    )  
+            """
+            components.html(html_code, height=500)
+    #           height=270,
+    #)  
 
 # -----------------  contact  ----------------- #
     with col2:
