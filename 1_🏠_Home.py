@@ -211,8 +211,6 @@ with st.container():
     with col1:
         # Add a subheader to introduce the coworker endorsement slideshow
         st.subheader("👄 My past Projects")
-        st.markdown(endorsements["img1"])
-        print(endorsements["img1"])
         # Embed an HTML component to display the slideshow
         components.html(
         f"""
@@ -269,15 +267,15 @@ with st.container():
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                <img src={endorsements["img1"]} style="width:100%">
+                <img src="{endorsements["img1"]}" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                <img src={endorsements["img2"]} style="width:100%">
+                <img src="{endorsements["img2"]}" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                <img src={endorsements["img3"]} style="width:100%">
+                <img src="{endorsements["img3"]}" style="width:100%">
                 </div>
 
             </div>
