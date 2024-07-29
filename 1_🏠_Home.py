@@ -210,7 +210,8 @@ with st.container():
     # In the first column (col1)        
     with col1:
         # Add a subheader to introduce the coworker endorsement slideshow
-        st.subheader("👄 Coworker Endorsements")
+        st.subheader("👄 My past Projects")
+        st.markdown(endorsements["img1"])
         # Embed an HTML component to display the slideshow
         components.html(
         f"""
