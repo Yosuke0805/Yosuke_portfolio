@@ -212,8 +212,8 @@ with st.container():
         # Add a subheader to introduce the coworker endorsement slideshow
         st.subheader("👄 My past Projects")
         # Embed an HTML component to display the slideshow
-        #components.html(
-        html_code = f"""
+        components.html(
+        f"""
         <!DOCTYPE html>
         <html>
         <head>
@@ -267,7 +267,7 @@ with st.container():
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                <img src={endorsements["img1"]} style="width:100%">
+                <img src="images/sns_analysis.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
@@ -328,10 +328,9 @@ with st.container():
             </body>
             </html> 
 
-            """
-        components.html(html_code, height=500)
-    #           height=270,
-    #)  
+            """,
+                height=270,
+    )  
 
 # -----------------  contact  ----------------- #
     with col2:
