@@ -331,7 +331,7 @@ with st.container():
             """,
                 height=270,
         )
-        st.markdown(f"<img src="{endorsements["img3"]}" style="width:100%">",unsafe_allow_html=True)
+        st.markdown(f"<img src="{endorsements["img3"]}" style="width:100%">",unsafe_allow_html=True,)
 
 # -----------------  contact  ----------------- #
     with col2:
