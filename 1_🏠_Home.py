@@ -115,8 +115,6 @@ docker_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf
 linux_lottie = load_lottieurl("https://lottie.host/46c43062-2807-4c79-925a-2442d54b1374/IGTBiNICNs.json")
 js_lottie = load_lottieurl("https://lottie.host/fc1ad1cd-012a-4da2-8a11-0f00da670fb9/GqPujskDlr.json")
 
-
-
 # ----------------- info ----------------- #
 def gradient(color1, color2, color3, content1, content2):
     st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
@@ -210,20 +208,11 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-def get_image_size(image_path):
-    with Image.open(image_path) as img:
-        width, height = img.size
-        print(f"Image size: {width}x{height} pixels")
-        return img.size  # returns (width, height)
-
 image1 = projects['img1']
-get_image_size(image1)
 image1_base64 = get_base64_of_bin_file(image1)
 image2 = projects['img2']
-get_image_size(image2)
 image2_base64 = get_base64_of_bin_file(image2)
 image3 = projects['img3']
-get_image_size(image3)
 image3_base64 = get_base64_of_bin_file(image3)
 
 with st.container():
@@ -232,7 +221,7 @@ with st.container():
     # In the first column (col1)        
     with col1:
         # Add a subheader to introduce the coworker project slideshow
-        st.subheader("👄 My past Projects")
+        st.subheader("💻 My past Projects")
         # Embed an HTML component to display the slideshow
         components.html(
         f"""
