@@ -360,7 +360,7 @@ with st.container():
             </body>
             </html>
             """,
-                height=500,
+                height=520,
         )
 
 
