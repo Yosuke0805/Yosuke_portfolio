@@ -23,7 +23,7 @@ embed_rss= {
         data-offset="0"></div></div> <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>"""
 }
 
-project = {
+projects = {
     "img1": "images/demand_forecasting.jpg",
     "img2": "images/sns_analysis.jpg",
     "img3": "images/customer_behavior_analysis.jpg"
