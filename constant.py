@@ -3,7 +3,7 @@ info = {
    "Name": "Yosuke",
    "Full_Name": "Yosuke Kawazoe",
    "Intro": "A Data Scientist/Machine learning engineer and AI Enthusiast",
-   "About":"Hey there, I'm Yosuke! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. I would love to work in English speaking country because that is my dream. Now, I have Youth Mobility Scheme Visa starting from 07/2024. Check out my LinkedIn: https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/",
+   "About":"Hey there, I'm Yosuke! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. I have been wanting to live in an English speaking country because that is my dream. Acheving my dream, now I have a Youth Mobility Scheme Visa from 07/2024 and would like to switch to work visa. Wanna know more about my backgroud? Check out my LinkedIn and reach me out!: https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/",
    "Tableau":"https://public.tableau.com/app/profile/vickytc/viz/SunnybrookTeam/Overview",
    "Medium":"https://medium.com/@vicky-note/about",
    "City":"London, United Kingdam",
@@ -23,8 +23,8 @@ embed_rss= {
         data-offset="0"></div></div> <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>"""
 }
 
-endorsements = {
-    "img1": "https://user-images.githubusercontent.com/90204593/238169843-12872392-f2f1-40a6-a353-c06a2fa602c5.png",
-    "img2": "https://user-images.githubusercontent.com/90204593/238171251-5f4c5597-84d4-4b4b-803c-afe74e739070.png",
-    "img3": "https://user-images.githubusercontent.com/90204593/238171242-53f7ceb3-1a71-4726-a7f5-67721419fef8.png"
+projects = {
+    "img1": "images/demand_forecasting.jpg",
+    "img2": "images/sns_analysis.jpg",
+    "img3": "images/customer_behavior_analysis.jpg"
 }

@@ -8,6 +8,7 @@ from constant import *
 from PIL import Image
 import openai
 from langchain.chat_models import ChatOpenAI
+import base64
 # ------------------------------------------------------------
 # ★★★★★★  load tokenizer from local ★★★★★★
 # ------------------------------------------------------------
@@ -114,8 +115,6 @@ docker_lottie = load_lottieurl("https://assets4.lottiefiles.com/private_files/lf
 linux_lottie = load_lottieurl("https://lottie.host/46c43062-2807-4c79-925a-2442d54b1374/IGTBiNICNs.json")
 js_lottie = load_lottieurl("https://lottie.host/fc1ad1cd-012a-4da2-8a11-0f00da670fb9/GqPujskDlr.json")
 
-
-
 # ----------------- info ----------------- #
 def gradient(color1, color2, color3, content1, content2):
     st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
@@ -203,134 +202,156 @@ with st.container():
             
 #         st.markdown(""" <a href={}> <em>🔗 access to the link </a>""".format(info['Medium']), unsafe_allow_html=True)
 
-# -----------------  endorsement  ----------------- #
+# -----------------  project  ----------------- #
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+image1 = projects['img1']
+image1_base64 = get_base64_of_bin_file(image1)
+image2 = projects['img2']
+image2_base64 = get_base64_of_bin_file(image2)
+image3 = projects['img3']
+image3_base64 = get_base64_of_bin_file(image3)
+
 with st.container():
     # Divide the container into three columns
     col1,col2,col3 = st.columns([0.475, 0.475, 0.05])
     # In the first column (col1)        
     with col1:
-        # Add a subheader to introduce the coworker endorsement slideshow
-        st.subheader("👄 Coworker Endorsements")
+        # Add a subheader to introduce the coworker project slideshow
+        st.subheader("💻 My past Projects")
         # Embed an HTML component to display the slideshow
         components.html(
         f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Styles for the slideshow -->
-        <style>
-            * {{box-sizing: border-box;}}
-            .mySlides {{display: none;}}
-            img {{vertical-align: middle;}}
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Styles for the slideshow -->
+            <style>
+                * {{box-sizing: border-box;}}
+                .mySlides {{display: none;}}
+                img {{vertical-align: middle;}}
 
-            /* Slideshow container */
-            .slideshow-container {{
-            position: relative;
-            margin: auto;
-            width: 100%;
-            }}
+                /* Slideshow container */
+                .slideshow-container {{
+                position: relative;
+                margin: auto;
+                width: 100%;
+                }}
 
-            /* The dots/bullets/indicators */
-            .dot {{
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #eaeaea;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            }}
+                /* The dots/bullets/indicators */
+                .dot {{
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #eaeaea;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                }}
 
-            .active {{
-            background-color: #6F6F6F;
-            }}
+                .active {{
+                background-color: #6F6F6F;
+                }}
 
-            /* Fading animation */
-            .fade {{
-            animation-name: fade;
-            animation-duration: 1s;
-            }}
+                /* Fading animation */
+                .fade {{
+                animation-name: fade;
+                animation-duration: 1s;
+                }}
 
-            @keyframes fade {{
-            from {{opacity: .4}} 
-            to {{opacity: 1}}
-            }}
+                @keyframes fade {{
+                from {{opacity: .4}} 
+                to {{opacity: 1}}
+                }}
 
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {{
-            .text {{font-size: 11px}}
-            }}
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {{
+                .text {{font-size: 11px}}
+                }}
             </style>
-        </head>
-        <body>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                <img src={endorsements["img1"]} style="width:100%">
+            </head>
+            <body>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                    <img src="data:image/png;base64,{image1_base64}" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                    <img src="data:image/png;base64,{image2_base64}" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                    <img src="data:image/png;base64,{image3_base64}" style="width:100%">
+                    </div>
+
+                </div>
+                <br>
+                <!-- Navigation dots -->
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
                 </div>
 
-                <div class="mySlides fade">
-                <img src={endorsements["img2"]} style="width:100%">
-                </div>
+                <script>
+                function initSlideshow() {{
+                    let slideIndex = 0;
+                    let interval;
 
-                <div class="mySlides fade">
-                <img src={endorsements["img3"]} style="width:100%">
-                </div>
+                    function showSlides() {{
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {{
+                            slides[i].style.display = "none";  
+                        }}
+                        slideIndex++;
+                        if (slideIndex > slides.length) {{slideIndex = 1}}    
+                        for (i = 0; i < dots.length; i++) {{
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }}
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                    }}
 
-            </div>
-            <br>
-            <!-- Navigation dots -->
-            <div style="text-align:center">
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-            </div>
+                    function startSlideshow() {{
+                        showSlides();
+                        interval = setInterval(showSlides, 2500); // Change image every 2.5 seconds
+                    }}
 
-            <script>
-            let slideIndex = 0;
-            showSlides();
+                    function pauseSlides() {{
+                        clearInterval(interval);
+                    }}
 
-            function showSlides() {{
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {{
-                slides[i].style.display = "none";  
-            }}
-            slideIndex++;
-            if (slideIndex > slides.length) {{slideIndex = 1}}    
-            for (i = 0; i < dots.length; i++) {{
-                dots[i].className = dots[i].className.replace("active", "");
-            }}
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            }}
+                    function resumeSlides() {{
+                        interval = setInterval(showSlides, 2500);
+                    }}
 
-            var interval = setInterval(showSlides, 2500); // Change image every 2.5 seconds
+                    // Set up event listeners for the mySlides
+                    let mySlides = document.getElementsByClassName("mySlides");
+                    for (let i = 0; i < mySlides.length; i++) {{
+                        mySlides[i].addEventListener('mouseover', pauseSlides);
+                        mySlides[i].addEventListener('mouseout', resumeSlides);
+                    }}
 
-            function pauseSlides(event)
-            {{
-                clearInterval(interval); // Clear the interval we set earlier
-            }}
-            function resumeSlides(event)
-            {{
-                interval = setInterval(showSlides, 2500);
-            }}
-            // Set up event listeners for the mySlides
-            var mySlides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < mySlides.length; i++) {{
-            mySlides[i].onmouseover = pauseSlides;
-            mySlides[i].onmouseout = resumeSlides;
-            }}
-            </script>
+                    startSlideshow();
+                }}
+
+                // Run the initSlideshow function when the DOM is fully loaded
+                window.addEventListener('DOMContentLoaded', initSlideshow);
+                </script>
 
             </body>
-            </html> 
-
+            </html>
             """,
-                height=270,
-    )  
+                height=520,
+        )
+
 
 # -----------------  contact  ----------------- #
     with col2:
