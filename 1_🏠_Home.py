@@ -204,17 +204,26 @@ with st.container():
             
 #         st.markdown(""" <a href={}> <em>🔗 access to the link </a>""".format(info['Medium']), unsafe_allow_html=True)
 
-# -----------------  endorsement  ----------------- #
+# -----------------  project  ----------------- #
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
-image1 = endorsements['img1']
+def get_image_size(image_path):
+    with Image.open(image_path) as img:
+        width, height = img.size
+        print(f"Image size: {width}x{height} pixels")
+        return img.size  # returns (width, height)
+
+image1 = projects['img1']
+get_image_size(image1)
 image1_base64 = get_base64_of_bin_file(image1)
-image2 = endorsements['img2']
+image2 = projects['img2']
+get_image_size(image2)
 image2_base64 = get_base64_of_bin_file(image2)
-image3 = endorsements['img3']
+image3 = projects['img3']
+get_image_size(image3)
 image3_base64 = get_base64_of_bin_file(image3)
 
 with st.container():
@@ -222,7 +231,7 @@ with st.container():
     col1,col2,col3 = st.columns([0.475, 0.475, 0.05])
     # In the first column (col1)        
     with col1:
-        # Add a subheader to introduce the coworker endorsement slideshow
+        # Add a subheader to introduce the coworker project slideshow
         st.subheader("👄 My past Projects")
         # Embed an HTML component to display the slideshow
         components.html(
