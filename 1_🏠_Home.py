@@ -351,7 +351,7 @@ with st.container():
             </body>
             </html>
             """,
-                height=270,
+                height=351,
         )
 
 
