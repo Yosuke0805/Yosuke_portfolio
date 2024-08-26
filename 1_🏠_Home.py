@@ -88,7 +88,7 @@ if user_input:
 
 # -----------------  loading assets  ----------------- #
 # load profile image
-img_profile = Image.open("images/business_profile.jpg")
+img_profile = Image.open("images/profile_photo.jpg")
 with st.sidebar:
     st.image(img_profile, width=200)
 
