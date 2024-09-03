@@ -28,7 +28,7 @@
       },
       {
         "media": {
-          "url": "",
+          "url": "https://yosuke0805.github.io/pics_for_portfolio/Canada.jpg",
           "caption": "Canada (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
         },
         "start_date": {
@@ -42,7 +42,7 @@
       },
       {
         "media": {
-          "url": "",
+          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
           "caption": "My Master thesis(Sorry only in Japanese!) (<a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>)"
         },
         "start_date": {
@@ -56,7 +56,7 @@
       },
       {
         "media": {
-          "url": "",
+          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
           "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.keytometals.com/Print.aspx?id=MetalProperties&LN=EN'>Key to Metals AG</a>)"
         },
         "start_date": {
