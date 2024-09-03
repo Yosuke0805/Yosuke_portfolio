@@ -21,10 +21,6 @@
           "year": "2015",
           "month":"4"
         },
-        "end_date": {
-          "year": "2020",
-          "month": "3"
-        },
         "text": {
           "headline": "Starting my bachelor in Tokyo Metropolitan University",
           "text": "<p>After severe studying for an entering exam, I passed my first choise of University.</p>"
@@ -32,7 +28,7 @@
       },
       {
         "media": {
-          "url": "https://www.youtube.com/watch?v=CmSKVW1v0xM",
+          "url": "images/Canada.jpg",
           "caption": "Streamlit Components (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
         },
         "start_date": {
@@ -42,7 +38,7 @@
         },
         "text": {
           "headline": "Studying abroad in Canada",
-          "text": "<p>I decided to study in Canada.</p>"
+          "text": "<p>I was typical Japanese who never been to abroad and don't speak English AT ALL.Since I felt learning English is necessary from now on, I decided to study in Canada for a year which is my turing point of my life.</p>"
         }
       },
       {
