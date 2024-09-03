@@ -89,6 +89,8 @@ if user_input:
 # -----------------  loading assets  ----------------- #
 # load profile image
 img_profile = Image.open("images/profile_photo.jpg")
+# Add some space above the image using HTML
+st.sidebar.markdown("<br><br>", unsafe_allow_html=True)  # Adds vertical space (two line breaks)
 with st.sidebar:
     st.image(img_profile, width=200)
 
