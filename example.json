@@ -8,14 +8,14 @@
         },
         "text": {
           "headline": "Welcome to<br>Yosuke's career Timeline",
-          "text": "<p>This timeline shows how I have been working from university. (Sorry I am still young lol)</p>"
+          "text": "<p>This timeline shows how I have been going through from university. (Sorry I am still young lol)</p>"
         }
     },
     "events": [
       {
         "media": {
           "url": "https://www.youtube.com/watch?v=SzE0RJwX_OQ",
-          "caption": "Tokyo Metropolitan University (<a target=\"_blank\" href='https://www.tmu.ac.jp/english/index.html'>credits</a>)"
+          "caption": "<a target=\"_blank\" href='https://www.tmu.ac.jp/english/index.html'>Tokyo Metropolitan University</a>"
         },
         "start_date": {
           "year": "2015",
