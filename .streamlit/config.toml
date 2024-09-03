@@ -1,10 +1,10 @@
 [theme]
 
 # Primary accent for interactive elements
-primaryColor = '#731717'
+primaryColor = '#7792E3'
 
 # Background color for the main content area
-backgroundColor = '#383866'
+backgroundColor = '#3c6638'
 
 # Color used for almost all text
 textColor = '#FFFFFF'
