@@ -33,6 +33,8 @@ st.set_page_config(page_title='Template', layout="wide", page_icon='👧🏻')
 
 # -----------------  chatbot  ----------------- #
 # Set up the OpenAI key
+# Add some space above the image using HTML
+st.sidebar.markdown("<br><br>", unsafe_allow_html=True)  # Adds vertical space (two line breaks)
 openai_api_key = st.sidebar.text_input('Enter your OpenAI API Key and hit Enter', type="password")
 openai.api_key = (openai_api_key)
 
@@ -89,8 +91,6 @@ if user_input:
 # -----------------  loading assets  ----------------- #
 # load profile image
 img_profile = Image.open("images/profile_photo.jpg")
-# Add some space above the image using HTML
-st.sidebar.markdown("<br><br>", unsafe_allow_html=True)  # Adds vertical space (two line breaks)
 with st.sidebar:
     st.image(img_profile, width=200)
 
