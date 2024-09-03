@@ -43,7 +43,7 @@
       {
         "media": {
           "url": "https://yosuke0805.github.io/pics_for_portfolio/Master_thesis.png",
-          "caption": "My Master thesis(Sorry only in Japanese!) <br>(<a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>)"
+          "caption": "My Master thesis(Sorry only in Japanese!) <br><a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>"
         },
         "start_date": {
           "year": "2020",
@@ -64,7 +64,7 @@
           "month":"8"
         },
         "text": {
-          "headline": "Machine learning engineer intern at Key to Metal",
+          "headline": "Machine learning engineer intern at Key to Metals",
           "text": "<p>Since study abroad in Europe got cancelled due to COVID-19 two times, I decided to do an intern in Belgrade, Serbia during summer vacation. After all, they offered me an intern position on remote due to my higher performance.</p>"
         }
       },
@@ -79,7 +79,7 @@
         },
         "text": {
           "headline": "Data Scientist at Nomura Research Institute",
-          "text": "<p>After job huntinig, I started to work in Japanese IT consulting company as a data scientist.</p>"
+          "text": "<p>After job huntinig, I got 7 job offers and I decided to start to work in Nomura Research Institute which is one of the biggest Japanese IT consulting companies as a data scientist.</p>"
         }
       }
 
