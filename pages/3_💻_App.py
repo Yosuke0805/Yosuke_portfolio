@@ -17,7 +17,7 @@ with st.sidebar:
 
 st.title("💻 My applications")
 
-st.markdown("Click here to visit my app for [summarizing meeting meniuts from audio file!!](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/)")
+st.markdown("[Click here to visit my app for summarizing meeting meniuts from audio file!!](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/)")
 
 
 
