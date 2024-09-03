@@ -37,13 +37,13 @@
         },
         "text": {
           "headline": "Studying abroad in Canada",
-          "text": "<p>I was typical Japanese who never been to abroad and don't speak English AT ALL.Since I felt learning English is necessary from now on, I decided to study in Canada for a year which is my turing point of my life.</p>"
+          "text": "<p>I was typical Japanese who never been to abroad and didn't speak English AT ALL. Since I felt learning English is necessary from now on, I decided to study in Canada for a year which is my turing point of my life.</p>"
         }
       },
       {
         "media": {
           "url": "https://yosuke0805.github.io/pics_for_portfolio/Master_thesis.png",
-          "caption": "My Master thesis(Sorry only in Japanese!) <br><a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>"
+          "caption": "My Master thesis below(Sorry only in Japanese!) <br><a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>"
         },
         "start_date": {
           "year": "2020",
