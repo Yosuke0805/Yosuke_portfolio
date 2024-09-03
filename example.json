@@ -42,7 +42,7 @@
       },
       {
         "media": {
-          "url": "https://yosuke0805.github.io/pics_for_portfolio/Master thesis.png",
+          "url": "https://yosuke0805.github.io/pics_for_portfolio/Master_thesis.png",
           "caption": "My Master thesis(Sorry only in Japanese!) <br>(<a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>)"
         },
         "start_date": {
@@ -56,8 +56,8 @@
       },
       {
         "media": {
-          "url": "",
-          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.keytometals.com/Print.aspx?id=MetalProperties&LN=EN'>Key to Metals AG</a>)"
+          "url": "https://yosuke0805.github.io/pics_for_portfolio/Serbia.jpg",
+          "caption": "<a target=\"_blank\" href='https://www.keytometals.com/Print.aspx?id=MetalProperties&LN=EN'>Key to Metals AG</a>"
         },
         "start_date": {
           "year": "2021",
@@ -71,7 +71,7 @@
       {
         "media": {
           "url": "https://www.youtube.com/watch?v=pldqFw0II04",
-          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
+          "caption": "<a target=\"_blank\" href='https://www.nri.com/en'>Nomura Research Institute</a>"
         },
         "start_date": {
           "year": "2022",
