@@ -28,13 +28,12 @@
       },
       {
         "media": {
-          "url": "images/Canada.jpg",
-          "caption": "Streamlit Components (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
+          "url": "",
+          "caption": "Canada (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
         },
         "start_date": {
           "year": "2018",
-          "month":"3",
-          "day":"1"
+          "month":"3"
         },
         "text": {
           "headline": "Studying abroad in Canada",
@@ -44,7 +43,7 @@
       {
         "media": {
           "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
-          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
+          "caption": "My Master thesis(Sorry only in Japanese!) (<a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>)"
         },
         "start_date": {
           "year": "2020",
@@ -58,7 +57,7 @@
       {
         "media": {
           "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
-          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
+          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.keytometals.com/Print.aspx?id=MetalProperties&LN=EN'>Key to Metals AG</a>)"
         },
         "start_date": {
           "year": "2021",
