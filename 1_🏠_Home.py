@@ -163,7 +163,7 @@ with st.container():
 # ----------------- timeline ----------------- #
 with st.container():
     st.markdown("""""")
-    st.subheader('📌 Career Snapshot')
+    st.subheader('📌 My Journey Snapshot')
 
     # load data
     with open('example.json', "r") as f:
