@@ -10,7 +10,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # load profile image
-img_profile = Image.open("images/profile_photo.jpg")
+img_profile = Image.open("images/business_profile2.jpg")
 with st.sidebar:
     st.image(img_profile, width=200)
 # TODO: Upload image on cloud to load by URL
