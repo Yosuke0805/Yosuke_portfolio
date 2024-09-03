@@ -15,10 +15,10 @@ with st.sidebar:
 # TODO: Upload image on cloud to load by URL
 # st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
-st.title("Welcome to My Streamlit App")
+st.title("💻 My applications")
 
 st.markdown("[Click here to visit my app for summarizing meeting meniuts from audio file!!](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/)")
 
-st.title("💻 My applications")
+
 
 
