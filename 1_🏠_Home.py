@@ -29,10 +29,12 @@ except LookupError:
 # ------------------------------------------------------------
 
 
-st.set_page_config(page_title='Template', layout="wide", page_icon='👧🏻')
+st.set_page_config(page_title='Yosuke Kawazoe Portfolio', layout="wide", page_icon='👧🏻')
 
 # -----------------  chatbot  ----------------- #
 # Set up the OpenAI key
+# # Add some space above the image using HTML
+# st.sidebar.markdown("<br><br>", unsafe_allow_html=True)  # Adds vertical space (two line breaks)
 openai_api_key = st.sidebar.text_input('Enter your OpenAI API Key and hit Enter', type="password")
 openai.api_key = (openai_api_key)
 
@@ -161,7 +163,7 @@ with st.container():
 # ----------------- timeline ----------------- #
 with st.container():
     st.markdown("""""")
-    st.subheader('📌 Career Snapshot')
+    st.subheader('📌 My Journey Snapshot')
 
     # load data
     with open('example.json', "r") as f:

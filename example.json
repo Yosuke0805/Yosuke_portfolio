@@ -7,53 +7,81 @@
           "credit": ""
         },
         "text": {
-          "headline": "Welcome to<br>Streamlit Timeline",
-          "text": "<p>A Streamlit Timeline component by integrating TimelineJS from Knightlab</p>"
+          "headline": "Welcome to<br>Yosuke's career Timeline",
+          "text": "<p>This timeline shows how I have been going through from university. (Sorry I am still young lol)</p>"
         }
     },
     "events": [
       {
         "media": {
-          "url": "https://vimeo.com/143407878",
-          "caption": "How to Use TimelineJS (<a target=\"_blank\" href='https://timeline.knightlab.com/'>credits</a>)"
+          "url": "https://www.youtube.com/watch?v=SzE0RJwX_OQ",
+          "caption": "<a target=\"_blank\" href='https://www.tmu.ac.jp/english/index.html'>Tokyo Metropolitan University</a>"
         },
         "start_date": {
-          "year": "2016",
-          "month":"1"
+          "year": "2015",
+          "month":"4"
         },
         "text": {
-          "headline": "TimelineJS<br>Easy-to-make, beautiful timelines.",
-          "text": "<p>TimelineJS is a populair tool from Knightlab. It has been used by more than 250,000 people to tell stories seen hundreds of millions of times, and is available in more than sixty languages. </p>"
+          "headline": "Starting my bachelor in Tokyo Metropolitan University",
+          "text": "<p>After severe studying for an entering exam, I passed my first choise of University.</p>"
         }
       },
       {
         "media": {
-          "url": "https://www.youtube.com/watch?v=CmSKVW1v0xM",
-          "caption": "Streamlit Components (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
+          "url": "https://yosuke0805.github.io/pics_for_portfolio/Canada.jpg",
+          "caption": "Toronto, Canada"
+        },
+        "start_date": {
+          "year": "2018",
+          "month":"3"
+        },
+        "text": {
+          "headline": "Studying abroad in Canada",
+          "text": "<p>I was typical Japanese who never been to abroad and didn't speak English AT ALL. Since I felt learning English is necessary from now on, I decided to study in Canada for a year which is my turing point of my life.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://yosuke0805.github.io/pics_for_portfolio/Master_thesis.png",
+          "caption": "My Master thesis below(Sorry only in Japanese!) <br><a target=\"_blank\" href='https://tokyo-metro-u.repo.nii.ac.jp/record/9919/files/T03078-001.pdf'>A quantitative study for capturing the town’s atmosphere by utilizing Convolutional Neural Network : A case study for Shimokitazawa </a>"
         },
         "start_date": {
           "year": "2020",
-          "month":"7",
-          "day":"13"
+          "month":"4"
         },
         "text": {
-          "headline": "Streamlit Components<br>version 0.63.0",
-          "text": "Streamlit lets you turn data scripts into sharable web apps in minutes, not weeks. It's all Python, open-source, and free! And once you've created an app you can use our free sharing platform to deploy, manage, and share your app with the world."
+          "headline": "Starting my master in Tokyo Metropolitan University",
+          "text": "<p>Since I wanted to study more of analytics, I decided to start my master and study harder.</p>"
         }
       },
       {
         "media": {
-          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
-          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
+          "url": "https://yosuke0805.github.io/pics_for_portfolio/Serbia.jpg",
+          "caption": "<a target=\"_blank\" href='https://www.keytometals.com/Print.aspx?id=MetalProperties&LN=EN'>Key to Metals AG</a>"
         },
         "start_date": {
           "year": "2021",
-          "month":"2"
+          "month":"8"
         },
         "text": {
-          "headline": "Streamlit TimelineJS component",
-          "text": "Started with a demo on https://www.innerdoc.com/nlp-timeline/ . <br>Then made a <a href='https://github.com/innerdoc/streamlit-timeline'>Streamlit component</a> of it. <br>Then made a <a href='https://pypi.org/project/streamlit-timeline/'>PyPi package</a> for it."
+          "headline": "Machine learning engineer intern at Key to Metals",
+          "text": "<p>Since study abroad in Europe got cancelled due to COVID-19 two times, I decided to do an intern in Belgrade, Serbia during summer vacation. After all, they offered me an intern position on remote due to my higher performance.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.youtube.com/watch?v=pldqFw0II04",
+          "caption": "<a target=\"_blank\" href='https://www.nri.com/en'>Nomura Research Institute</a>"
+        },
+        "start_date": {
+          "year": "2022",
+          "month":"4"
+        },
+        "text": {
+          "headline": "Data Scientist at Nomura Research Institute",
+          "text": "<p>After job huntinig, I got 7 job offers and I decided to start to work in Nomura Research Institute which is one of the biggest Japanese IT consulting companies as a data scientist.</p>"
         }
       }
+
     ]
 }
