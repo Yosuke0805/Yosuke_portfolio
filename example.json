@@ -14,8 +14,8 @@
     "events": [
       {
         "media": {
-          "url": "https://www.tmu.ac.jp/english/index.html",
-          "caption": "How to Use TimelineJS (<a target=\"_blank\" href='https://timeline.knightlab.com/'>credits</a>)"
+          "url": "https://www.youtube.com/watch?v=SzE0RJwX_OQ",
+          "caption": "Tokyo Metropolitan University (<a target=\"_blank\" href='https://www.tmu.ac.jp/english/index.html'>credits</a>)"
         },
         "start_date": {
           "year": "2015",
@@ -32,13 +32,27 @@
           "caption": "Streamlit Components (<a target=\"_blank\" href='https://streamlit.io/'>credits</a>)"
         },
         "start_date": {
-          "year": "2020",
-          "month":"4",
+          "year": "2018",
+          "month":"3",
           "day":"1"
         },
         "text": {
-          "headline": "Streamlit Components<br>version 0.63.0",
-          "text": "Streamlit lets you turn data scripts into sharable web apps in minutes, not weeks. It's all Python, open-source, and free! And once you've created an app you can use our free sharing platform to deploy, manage, and share your app with the world."
+          "headline": "Studying abroad in Canada",
+          "text": "<p>I decided to study in Canada.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
+          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
+        },
+        "start_date": {
+          "year": "2020",
+          "month":"4"
+        },
+        "text": {
+          "headline": "Starting my master in Tokyo Metropolitan University",
+          "text": "<p>Since I wanted to study more of analytics, I decided to start my master and study harder.</p>"
         }
       },
       {
@@ -48,12 +62,27 @@
         },
         "start_date": {
           "year": "2021",
-          "month":"2"
+          "month":"8"
         },
         "text": {
-          "headline": "Streamlit TimelineJS component",
-          "text": "Started with a demo on https://www.innerdoc.com/nlp-timeline/ . <br>Then made a <a href='https://github.com/innerdoc/streamlit-timeline'>Streamlit component</a> of it. <br>Then made a <a href='https://pypi.org/project/streamlit-timeline/'>PyPi package</a> for it."
+          "headline": "Machine learning engineer intern at Key to Metal",
+          "text": "<p>Since study abroad in Europe got cancelled due to COVID-19 two times, I decided to do an intern in Belgrade, Serbia during summer vacation. After all, they offered me an intern position on remote due to my higher performance.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
+          "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
+        },
+        "start_date": {
+          "year": "2022",
+          "month":"4"
+        },
+        "text": {
+          "headline": "Data Scientist at Nomura Research Institute",
+          "text": "<p>After job huntinig, I started to work in Japanese IT consulting company as a data scientist.</p>"
         }
       }
+
     ]
 }
