@@ -21,6 +21,10 @@
           "year": "2015",
           "month":"4"
         },
+        "end_date": {
+          "year": "2020",
+          "month": "3"
+        },
         "text": {
           "headline": "Starting my bachelor in Tokyo Metropolitan University",
           "text": "<p>After severe studying for an entering exam, I passed my first choise of University.</p>"
@@ -71,7 +75,7 @@
       },
       {
         "media": {
-          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
+          "url": "https://www.youtube.com/watch?v=pldqFw0II04",
           "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
         },
         "start_date": {
