@@ -9,7 +9,7 @@ Career Goal:
 Yosuke's career goal is to become an AI full-stack engineer who can build infrastructures, create a variety of machine learning models, and implement them into applications for users to utilize AI to automate.
 
 Skills: 
-AI, Machine learning, Deep learning, Data Science, Statistic, Cloud, Python
+AI, Machine learning, Deep learning, Data Science, Statistic, Cloud, Python, Dcoker, Linux
 
 Certification:
 Google Cloud Professional Machine learning Engineer(2024)
@@ -26,6 +26,7 @@ IELTS Academic overall 6.5 (Listening 6.0, Reading 6.0, Speaking 7.5, Writing 5.
 
 
 Achievements:
+At Nomure Research Institute
 Spearheaded AI projects at NRI, developing several AI solutions and implemented into system.
 Specifically,
 - Built system environment on a server from scratch, developed customer retrieval application and deployed on the environment. 
@@ -33,11 +34,15 @@ Specifically,
 - Created solutions to understand consumer characteristics through constructing a multi-cloud data analysis environment with advanced security.
 - Contributed to transforming the R&D project into an investment activity that validates its worth and creates actual solutions for real clients.
 - Implemented logic and improved model’s accuracy for the development of an AI system to solve customers’ problems, ultimately obtaining customer approval and progressing toward system implementation.
+At Key to Metals Advantages
+- Created the state of the art deep learning model whose accuracy has surpassed the benchmark of Google AI Platform with parameter tuning.
+- Created GUI with Tkinter to let other non-programmers execute Kennard-stone. 
+- At the end of the on-site internship, got the job offer by working remotely with 4000 yen per hour which is more than three times as high as the average salary in Japan due to my higher performance. 
 
 
 Contact:
 LinkedIn: https://www.linkedin.com/in/yosuke-kawazoe-8782b218b/
-Phone: +81-80-4717-8940
+Phone: +44-7789-282643
 Location: London, United Kingdam
 
 Strengths and Advantages:
