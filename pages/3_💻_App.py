@@ -17,6 +17,20 @@ with st.sidebar:
 
 st.title("💻 My applications")
 
+st.header("These are the application that I built by myself in my spare time. Let me know what you think and feel free to request any functions!!")
+
+# summarizing meeting minutes from audio file
+st.subheader("Summarizing meeting minutes from audio file")
+description = """
+Have you ever thought that you wanted to automate creating meeting minutes especially when you attend international meetings where people speak differenct languages?
+Well, this app is for you!!
+All you have to do for taking advantage this app is following two things.
+1. Record a meeting.
+2. Generate gemini API key and click on the button. You can generate your gemini API key [here](https://aistudio.google.com/app/apikey).
+When you open the app, drop down audio file that you record and select the original language that is spoken in meeting and the target language that you want to summarize in and click on the button.
+This way, you won't waste your precious time and it is completely free!!
+"""
+
 st.markdown("[Click here to visit my app for summarizing meeting meniuts from audio file!!](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/)")
 
 
