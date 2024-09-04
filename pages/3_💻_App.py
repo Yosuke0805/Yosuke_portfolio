@@ -23,7 +23,7 @@ st.markdown("**These are the application that I built by myself in my spare time
 st.header("Summarizing meeting minutes from audio file")
 description = """
 Have you ever thought that you wanted to automate creating meeting minutes especially when you attend international meetings where people speak differenct languages?
-Well, this app is for you!!
+Well, this app is for you!!  
 All you have to do for taking advantage this app is following two things.
 1. Record a meeting.
 2. Generate gemini API key and click on the button. You can generate your gemini API key [here](https://aistudio.google.com/app/apikey)
@@ -32,7 +32,7 @@ When you open the app, drop down audio file that you record and select the origi
 This way, you won't waste your precious time and it is completely free!!
 """
 st.markdown(description)
-st.markdown("Click[here](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/)to visit my app for summarizing meeting meniuts from audio file!!")
+st.markdown("Click [here](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/) to visit my app for summarizing meeting meniuts from audio file!!")
 
 
 
