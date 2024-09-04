@@ -21,6 +21,7 @@ st.markdown("**These are the application that I built by myself in my spare time
 
 # summarizing meeting minutes from audio file
 st.header("Summarizing meeting minutes from audio file")
+st.subheader("Discription")
 description = """
 Have you ever thought that you wanted to automate creating meeting minutes especially when you attend international meetings where people speak differenct languages?
 Well, this app is for you!!  
