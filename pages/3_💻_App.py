@@ -36,7 +36,7 @@ st.markdown("Click below button to visit my app for summarizing meeting meniuts 
 url = "https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/"
 # Create a button with HTML
 st.markdown(f"""
-    <a href="{url}" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #1a73e8; border-radius: 5px; text-decoration: none;">Go to Example</a>
+    <a href="{url}" type="url_app" target="_blank" >Try app</a>
 """, unsafe_allow_html=True)
 
 
