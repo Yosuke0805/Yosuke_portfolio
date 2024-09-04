@@ -19,7 +19,7 @@ with st.sidebar:
 st.title("🫶 Hobbies")
 
 # config
-travel_img_path = "images/Cappadocia.jpeg"
+travel_img_path = "images/lake_district.jpg"
 snowboarding_img_path = "images/snowboading.jpg"
 workingout_img_path = "images/workout.JPG"
 
@@ -60,17 +60,6 @@ table = f"""
         <th>{data[2]["description"]}</th>
    </tr>
 """
-
-# for item in data:
-#     table += f"""
-# <table>
-#     <tr>
-#         <th>{item['name']}</th>
-#         <td><img src="{item['image']}" width="100"></td>
-#     </tr>
-#     """
-
-# table += "</table>"
 
 # Display the table
 st.markdown(table, unsafe_allow_html=True)
