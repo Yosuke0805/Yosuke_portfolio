@@ -20,7 +20,7 @@ st.title("🫶 Hobbies")
 
 # config
 travel_img_path = "images/lake_district.jpg"
-snowboarding_img_path = "images/snowboading.jpg"
+snowboarding_img_path = "images/snowboarding.jpg"
 workingout_img_path = "images/workout.JPG"
 
 #################### using html ####################
@@ -50,9 +50,9 @@ table = f"""
         <th>{data[2]["name"]}</th>
    </tr>
    <tr>
-        <td><img src="data:image/png;base64,{travel_img_base64}" style="width:100%"></td>
-        <td><img src="data:image/png;base64,{snowboarding_img_base64}" style="width:100%"></td>
-        <td><img src="data:image/png;base64,{workingout_img_base64}" style="width:100%"></td>
+        <td><img src="data:image/png;base64,{travel_img_base64}" style="height:2000px;width:100%"></td>
+        <td><img src="data:image/png;base64,{snowboarding_img_base64}" style="height:2000px;width:100%"></td>
+        <td><img src="data:image/png;base64,{workingout_img_base64}" style="height:2000px;width:100%"></td>
     </tr>
     <tr>
         <th>{data[0]["description"]}</th>
