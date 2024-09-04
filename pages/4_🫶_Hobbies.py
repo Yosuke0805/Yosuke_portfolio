@@ -52,8 +52,13 @@ table = f"""
    <tr>
         <td><img src="data:image/png;base64,{travel_img_base64}" style="width:100%"></td>
         <td><img src="data:image/png;base64,{snowboarding_img_base64}" style="width:100%"></td>
-        <td><img src="data:image/png;base64,{workingout_img_base64}" style="width:100%"></td>
+        <td><img src="data:image/png;base64,{workingout_img_base64}" style="width:150%"></td>
     </tr>
+    <tr>
+        <th>{data[0]["description"]}</th>
+        <th>{data[1]["description"]}</th>
+        <th>{data[2]["description"]}</th>
+   </tr>
 """
 
 # for item in data:
