@@ -50,9 +50,9 @@ table = f"""
         <th>{data[2]["name"]}</th>
    </tr>
    <tr>
-        <td><img src="data:image/png;base64,{travel_img_base64}" style="height:2000px;width:100%"></td>
-        <td><img src="data:image/png;base64,{snowboarding_img_base64}" style="height:2000px;width:100%"></td>
-        <td><img src="data:image/png;base64,{workingout_img_base64}" style="height:2000px;width:100%"></td>
+        <td><img src="data:image/png;base64,{travel_img_base64}" style="height:300px;width:100%"></td>
+        <td><img src="data:image/png;base64,{snowboarding_img_base64}" style="height:300px;width:100%"></td>
+        <td><img src="data:image/png;base64,{workingout_img_base64}" style="height:300px;width:100%"></td>
     </tr>
     <tr>
         <th>{data[0]["description"]}</th>
