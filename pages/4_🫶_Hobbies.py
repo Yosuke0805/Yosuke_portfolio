@@ -32,16 +32,28 @@ data = [
 
 # Creating a table with images
 
-
-for item in data:
-    table = f"""
+table = f"""
+<table>
     <tr>
-        <th>{item['name']}</th>
-        <td><img src="{item['image']}" width="100"></td>
+        <th>{data[0]["name"]}</th>
+        <th>{data[1]["name"]}</th>
+        <th>{data[2]["name"]}</th> 
+        <td>{data[0]["name"]}</td>
+        <td>{data[1]["name"]}</td>
+        <td>{data[2]["name"]}</td>   
     </tr>
-    """
+"""
 
-table += "</table>"
+# for item in data:
+#     table += f"""
+# <table>
+#     <tr>
+#         <th>{item['name']}</th>
+#         <td><img src="{item['image']}" width="100"></td>
+#     </tr>
+#     """
+
+# table += "</table>"
 
 # Display the table
 st.markdown(table, unsafe_allow_html=True)
