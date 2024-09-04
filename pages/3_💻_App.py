@@ -32,7 +32,7 @@ When you open the app, drop down audio file that you record and select the origi
 This way, you won't waste your precious time and it is completely free!!
 """
 st.markdown(description)
-st.markdown("Click [here](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/) to visit my app for summarizing meeting meniuts from audio file!!")
+st.markdown("Click[here](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/)to visit my app for summarizing meeting meniuts from audio file!!")
 
 
 
