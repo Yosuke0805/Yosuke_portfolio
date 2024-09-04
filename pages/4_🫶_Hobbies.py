@@ -18,17 +18,26 @@ with st.sidebar:
 st.title("🫶 Hobbies")
 
 # config
-travel_pic_path = "images/Cappadocia.jpeg"
-snowboarding_path = "images/snowboading.jpg"
-workout_path = "images/workout.JPG"
+travel_img_path = "images/Cappadocia.jpeg"
+snowboarding_img_path = "images/snowboading.jpg"
+workingout_img_path = "images/workout.JPG"
 
 #################### using html ####################
 # Sample data
 data = [
-    {"name": "Travel", "image": travel_pic_path},
-    {"name": "Snowboaring", "image": snowboarding_path},
-    {"name": "Workout", "image": workout_path}
+    {"name": "Travel", "image": travel_img_path, "description": "I have been to 31 countries since I started traveling when I was 21."},
+    {"name": "Snowboaring", "image": snowboarding_img_path, "description": "Currently mastering run trick while curving."},
+    {"name": "Workout", "image": workingout_img_path, "description": "I love working out and doing lifting. I just love exercise which makes me release my stress and feel adrenaline."}
 ]
+
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+travel_img_base64 = get_base64_of_bin_file(data[0]["image"])
+snowboarding_img_base64 = get_base64_of_bin_file(data[1]["image"])
+workingout_img_base64 = get_base64_of_bin_file(data[2]["image"])
 
 # Creating a table with images
 
@@ -40,9 +49,9 @@ table = f"""
         <th>{data[2]["name"]}</th>
    </tr>
    <tr>
-        <td><img src="{data[0]["image"]}" width="100"></td>
-        <td><img src="{data[1]["image"]}" width="100"></td>
-        <td><img src="{data[2]["image"]}" width="100"></td>
+        <td><img src="data:image/png;base64,{travel_img_base64}" style="width:100%"></td>
+        <td><img src="data:image/png;base64,{snowboarding_img_base64}" style="width:100%"></td>
+        <td><img src="data:image/png;base64,{workingout_img_base64}" style="width:100%"></td>
     </tr>
 """
 
@@ -62,9 +71,9 @@ st.markdown(table, unsafe_allow_html=True)
 
 #################### using columns ####################
 # load images
-img_1 = Image.open(travel_pic_path)
-img_2 = Image.open(snowboarding_path)
-img_3 = Image.open(workout_path)
+img_1 = Image.open(travel_img_path)
+img_2 = Image.open(snowboarding_img_path)
+img_3 = Image.open(workingout_img_path)
 
 col1, col2, col3 = st.columns(3)
 
