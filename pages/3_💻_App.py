@@ -32,8 +32,14 @@ When you open the app, drop down audio file that you record and select the origi
 This way, you won't waste your precious time and it is completely free!!
 """
 st.markdown(description)
-st.markdown("Click [here](https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/) to visit my app for summarizing meeting meniuts from audio file!!")
-
+st.markdown("Click below button to visit my app for summarizing meeting meniuts from audio file!!")
+url = "https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streamlit.app/"
+# Create a button with HTML
+st.markdown(f"""
+    <a href="{url}" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #1a73e8; border-radius: 5px; text-decoration: none;">Go to Example</a>
+""", unsafe_allow_html=True)
+if st.button("Try app"):
+    st.write("Button clicked!")
 
 
 
