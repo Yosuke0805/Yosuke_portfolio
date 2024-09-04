@@ -37,7 +37,9 @@ table = f"""
     <tr>
         <th>{data[0]["name"]}</th>
         <th>{data[1]["name"]}</th>
-        <th>{data[2]["name"]}</th> 
+        <th>{data[2]["name"]}</th>
+   </tr>
+   <tr>
         <td>{data[0]["name"]}</td>
         <td>{data[1]["name"]}</td>
         <td>{data[2]["name"]}</td>   
