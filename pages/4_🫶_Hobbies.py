@@ -4,7 +4,7 @@ from constant import *
 
 def local_css(file_name):
     with open(file_name) as f:
-        st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
         
 local_css("style/style.css")
 
@@ -15,23 +15,54 @@ with st.sidebar:
 # TODO: Upload image on cloud to load by URL
 # st.sidebar.markdown(info['Photo'],unsafe_allow_html=True)
 
-img_1 = Image.open("images/Cappadocia.jpeg")
-img_2 = Image.open("images/snowboading.jpg")
-img_3 = Image.open("images/workout.JPG")
-
 st.title("🫶 Hobbies")
+
+# config
+travel_pic_path = "images/Cappadocia.jpeg"
+snowboarding_path = "images/snowboading.jpg"
+workout_path = "images/workout.JPG"
+
+#################### using html ####################
+# Sample data
+data = [
+    {"name": "Travel", "image": travel_pic_path},
+    {"name": "Snowboaring", "image": snowboarding_path},
+    {"name": "Workout", "image": workout_path}
+]
+
+# Creating a table with images
+
+
+for item in data:
+    table = f"""
+    <tr>
+        <th>{item['name']}</th>
+        <td><img src="{item['image']}" width="100"></td>
+    </tr>
+    """
+
+table += "</table>"
+
+# Display the table
+st.markdown(table, unsafe_allow_html=True)
+
+#################### using columns ####################
+# load images
+img_1 = Image.open(travel_pic_path)
+img_2 = Image.open(snowboarding_path)
+img_3 = Image.open(workout_path)
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-   st.write("Traveling")
+   st.subheader("Traveling")
    st.image(img_1)
 
 with col2:
-   st.write("Snowboarding")
+   st.subheader("Snowboarding")
    st.image(img_2)
 
 with col3:
-   st.write("Workout")
+   st.subheader("Workout")
    st.image(img_3)
 
