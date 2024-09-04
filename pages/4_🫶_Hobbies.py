@@ -52,7 +52,7 @@ table = f"""
    <tr>
         <td><img src="data:image/png;base64,{travel_img_base64}" style="width:100%"></td>
         <td><img src="data:image/png;base64,{snowboarding_img_base64}" style="width:100%"></td>
-        <td style="width:150px;><img src="data:image/png;base64,{workingout_img_base64}" style="width:100%"></td>
+        <td><img src="data:image/png;base64,{workingout_img_base64}" style="width:100%"></td>
     </tr>
     <tr>
         <th>{data[0]["description"]}</th>
