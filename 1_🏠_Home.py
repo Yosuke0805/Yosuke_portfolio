@@ -80,12 +80,12 @@ user_input = get_text()
 if user_input:
   #text = st.text_area('Enter your questions')
   if not openai_api_key.startswith('sk-'):
-    st.warning('⚠️Please enter your OpenAI API key on the sidebar.', icon='⚠')
+    st.warning('⚠️Please enter your OpenAI API key on the sidebar.')
   if openai_api_key.startswith('sk-'):
     try:
         st.info(ask_bot(user_input))
     except Exception as e:
-        st.warning('⚠️Please check you API key!! It can be expired or invalid!!', icon='⚠')
+        st.warning('⚠️Please check you API key!! It can be expired or invalid!!')
         st.write(e)
 
 # -----------------  loading assets  ----------------- #
