@@ -76,22 +76,22 @@ table = f"""
 st.markdown(table, unsafe_allow_html=True)
 
 #################### using columns ####################
-# load images
-img_1 = Image.open(travel_img_path)
-img_2 = Image.open(snowboarding_img_path)
-img_3 = Image.open(workingout_img_path)
+# # load images
+# img_1 = Image.open(travel_img_path)
+# img_2 = Image.open(snowboarding_img_path)
+# img_3 = Image.open(workingout_img_path)
 
-col1, col2, col3 = st.columns(3)
+# col1, col2, col3 = st.columns(3)
 
-with col1:
-   st.subheader("Traveling")
-   st.image(img_1)
+# with col1:
+#    st.subheader("Traveling")
+#    st.image(img_1)
 
-with col2:
-   st.subheader("Snowboarding")
-   st.image(img_2)
+# with col2:
+#    st.subheader("Snowboarding")
+#    st.image(img_2)
 
-with col3:
-   st.subheader("Workout")
-   st.image(img_3)
+# with col3:
+#    st.subheader("Workout")
+#    st.image(img_3)
 
