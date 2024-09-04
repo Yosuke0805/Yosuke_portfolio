@@ -40,9 +40,9 @@ table = f"""
         <th>{data[2]["name"]}</th>
    </tr>
    <tr>
-        <td>{data[0]["image"]}</td>
-        <td>{data[1]["image"]}</td>
-        <td>{data[2]["image"]}</td>   
+        <td><img src="{data[0]["image"]}" width="100"></td>
+        <td><img src="{data[1]["image"]}" width="100"></td>
+        <td><img src="{data[2]["image"]}" width="100"></td>
     </tr>
 """
 
