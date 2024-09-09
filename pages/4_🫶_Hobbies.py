@@ -27,7 +27,7 @@ workingout_img_path = "images/workout.JPG"
 # Sample data
 data = [
     {"name": "Travel", "image": travel_img_path, "description": "I have been to 31 countries since I started traveling when I was 21."},
-    {"name": "Snowboaring", "image": snowboarding_img_path, "description": "Currently mastering run trick while curving."},
+    {"name": "Snowboaring", "image": snowboarding_img_path, "description": "Currently mastering run trick with curving."},
     {"name": "Workout", "image": workingout_img_path, "description": "I love working out and doing lifting. I just love exercise which makes me release my stress and feel adrenaline."}
 ]
 
