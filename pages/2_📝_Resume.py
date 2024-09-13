@@ -18,7 +18,7 @@ with st.sidebar:
 
 st.title("📝 Resume")
 
-st.write("[Click here if it's blocked by your browser](https://drive.google.com/file/d/1uYDmIEnTe45Rr49HRGQxMkOCGCs3UVct/view?usp=sharing)")
+st.write("[Click here if it's blocked by your browser](https://drive.google.com/file/d/10oVBOqPMbUwPWJyZXzkPGgEf-UNGffdi/view?usp=sharing)")
 
 with open("images/Yosuke(Daniel)_Kawazoe_CV.pdf","rb") as f:
       base64_pdf = base64.b64encode(f.read()).decode('utf-8')
