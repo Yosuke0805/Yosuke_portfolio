@@ -31,6 +31,7 @@ data = [
     {"name": "Workout", "image": workingout_img_path, "description": "I love working out and doing lifting. I just love exercise which lets me release my stress and feel adrenaline."}
 ]
 
+@st.cache_data
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
