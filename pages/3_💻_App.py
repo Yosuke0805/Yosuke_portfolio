@@ -37,6 +37,25 @@ st.markdown(f"""
     <a href="{url_movies}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
 """, unsafe_allow_html=True)
 
+# suggesting travel itinerary
+st.header("🛫 Suggesting travel itinerary")
+st.subheader("Discription")
+description_itinerary = """
+Since I am huge fun of traveling, I always spend a bunch of time of what to do in my spare time.
+Maybe you too??
+Well, this app is a time saver to suggest travel itinerary for you!
+This will give you a roughly idea of what you can do during travel.
+You will need Gemini API key and input it on the sidebar. You can generate your Gemini API key [here](https://aistudio.google.com/app/apikey)
+Let me know if you want to customize more then I will modify the app!!
+"""
+st.markdown(description_itinerary)
+st.markdown("Click below button to visit my app for recommending movies!!")
+url_itinerary = "https://why-do-not-travel-somewhere.streamlit.app/"
+# Create a button with HTML
+st.markdown(f"""
+    <a href="{url_itinerary}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
+""", unsafe_allow_html=True)
+
 # summarizing meeting minutes from audio file
 st.header("📋 Summarizing meeting minutes from audio file")
 st.subheader("Discription")
