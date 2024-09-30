@@ -41,7 +41,7 @@ st.markdown(f"""
 st.header("🛫 Suggesting travel itinerary")
 st.subheader("Discription")
 description_itinerary = """
-Since I am huge fun of traveling, I always spend a bunch of time of what to do in my spare time.
+Since I am a huge fun of traveling, I always spend a bunch of time of what to do in my spare time.
 Maybe you too??
 Well, this app is a time saver to suggest travel itinerary for you!
 This will give you a roughly idea of what you can do during travel.
