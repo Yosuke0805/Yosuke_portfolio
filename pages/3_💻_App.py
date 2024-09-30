@@ -49,7 +49,7 @@ You will need Gemini API key and input it on the sidebar. You can generate your 
 Let me know if you want to customize more then I will modify the app!!
 """
 st.markdown(description_itinerary)
-st.markdown("Click below button to visit my app for recommending movies!!")
+st.markdown("Click below button to visit my app for suggesting you an travel itinerary!!")
 url_itinerary = "https://why-do-not-travel-somewhere.streamlit.app/"
 # Create a button with HTML
 st.markdown(f"""
