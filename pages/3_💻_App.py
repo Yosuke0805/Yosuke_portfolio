@@ -17,7 +17,7 @@ with st.sidebar:
 
 st.title("💻 My applications")
 
-st.markdown("**These are the application that I built by myself in my spare time. Let me know what you think and feel free to request any functions!!**")
+st.markdown("**These are the ML/LLM application that I built by myself in my spare time. Let me know what you think and feel free to request any functions!!**")
 
 # recommending movies
 st.header("🎥 Reccomending movies")
