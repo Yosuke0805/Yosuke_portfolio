@@ -18,7 +18,7 @@ with st.sidebar:
 st.title("💻 My applications")
 
 st.markdown("**These are the ML/LLM application that I built by myself in my spare time. Let me know what you think and feel free to request any functions!!**")
-st.markdown("※ Apps might need to be rebooted. Don't worry it's just simply press the button ;)")
+st.markdown("※ Apps might need to be rebooted. Don't worry it's just simply pressing the button ;)")
 
 # recommending movies
 st.header("🎥 Reccomending movies")
@@ -38,7 +38,7 @@ st.markdown(f"""
     <a href="{url_movies}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
 """, unsafe_allow_html=True)
 
-# suggesting travel itinerary
+# suggesting travel plan
 st.header("🛫 Suggesting travel itinerary")
 st.subheader("Discription")
 description_itinerary = """
@@ -51,7 +51,7 @@ Let me know if you want to customize more then I will modify the app!!
 """
 st.markdown(description_itinerary)
 st.markdown("Click below button to visit my app for suggesting you an travel itinerary!!")
-url_itinerary = "https://why-do-not-travel-somewhere.streamlit.app/"
+url_itinerary = "https://lets-make-travel-itinerary-together.streamlit.app/"
 # Create a button with HTML
 st.markdown(f"""
     <a href="{url_itinerary}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
