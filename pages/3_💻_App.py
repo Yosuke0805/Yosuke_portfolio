@@ -51,7 +51,7 @@ Let me know if you want to customize more then I will modify the app!!
 """
 st.markdown(description_itinerary)
 st.markdown("Click below button to visit my app for suggesting you an travel itinerary!!")
-url_itinerary = "https://why-do-not-travel-somewhere.streamlit.app/"
+url_itinerary = "https://lets-make-travel-itinerary-together.streamlit.app/"
 # Create a button with HTML
 st.markdown(f"""
     <a href="{url_itinerary}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
