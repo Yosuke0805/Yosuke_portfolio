@@ -24,10 +24,11 @@ st.markdown("※ Apps might need to be rebooted. Don't worry it's just simply pr
 st.header("🎥 Recommending movies")
 st.subheader("Discription")
 description_movies = """
-Have you ever experienced binge-watching movies and need help deciding what to watch next but were too dull to search for movies??
-Here is the app for you!
-All you have to do is choose the category and movies that you like, click on the button, and the top 10 recommended movies will be shown.
-I am afraid that this app is not personalized to your taste. If you want to get personalized recos, let me know, and I will try to create a personalized recommendation;)
+Have you ever experienced binge-watching movies and need help deciding what to watch next but were too dull to search for movies?? 
+Here is the app for you! 
+All you have to do is choose the category and movies that you like, click on the button, and the top 10 recommended movies will be shown. 
+I am afraid that this app is not personalized to your taste. 
+If you want to get personalized recos, let me know, and I will try to create a personalized recommendation;) 
 Check it out!
 """
 st.markdown(description_movies)
@@ -65,12 +66,19 @@ st.markdown(f"""
 st.header("🛫 Suggesting travel itinerary")
 st.subheader("Discription")
 description_itinerary = """
-Since I am a huge fun of traveling, I always spend a bunch of time of what to do in my spare time.
+#### Background
+Since I am a huge fun of traveling, I always spend a bunch of time of what to do during travel in my spare time.
 Maybe you too??
 Well, this app is a time saver to suggest travel itinerary for you!
 This will give you a roughly idea of what you can do during travel.
-You will need Gemini API key and input it on the sidebar. You can generate your Gemini API key [here](https://aistudio.google.com/app/apikey)
-Let me know if you want to customize more then I will modify the app!!
+This app utilizes Gemini model so it requires Gemini API which is free of charge!!
+You can generate your Gemini API key [here](https://aistudio.google.com/app/apikey)
+
+#### How to use it
+1. Generate Gemini API key.
+2. Click 'Others' and input Gemini APi key on sidebar.
+3. Input your duration, destination, departure date. If you already decided next destination, input it too.
+4. Click "Generate Itinerary" button.
 """
 st.markdown(description_itinerary)
 st.markdown("Click below button to visit my app for suggesting you an travel itinerary!!")
@@ -84,14 +92,20 @@ st.markdown(f"""
 st.header("📋 Summarizing meeting minutes from audio file")
 st.subheader("Discription")
 description_summary = """
+#### Background
 Have you ever thought that you wanted to automate creating meeting minutes especially when you attend international meetings where people speak different languages?
 Well, this app is for you!!  
-All you have to do to take advantage of this app is follow two things.
+This app utilizes Gemini model so it requires Gemini API which is free of charge!!
+You can generate your Gemini API key [here](https://aistudio.google.com/app/apikey)
 
+#### How to use it
 1. Record a meeting.
-2. Generate Gemini API key and click on the button. You can generate your Gemini API key [here](https://aistudio.google.com/app/apikey)
+2. Generate Gemini API key
+3. Input Gemini API key on sidebar.
+4. Drop the audio file that records a meeting.
+5. Select the original language that is spoken in the meeting and the target language that you want to summarize
+6. Press the button
 
-When you open the app, drop down the audio file that you recorded and select the original language that is spoken in the meeting and the target language that you want to summarize, and click on the button.
 This way, you won't waste your precious time and it is completely free!!
 
 """
