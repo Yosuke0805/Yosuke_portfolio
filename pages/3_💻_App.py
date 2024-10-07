@@ -56,7 +56,7 @@ You can generate your Gemini API key [here](https://aistudio.google.com/app/apik
 3. Chat with Agent!
 """
 st.markdown(description_agent)
-st.markdown("Click below button to visit 🌍 Travel plan AI agent!!")
+st.markdown("Click below button to visit my Travel plan AI agent!!")
 url_agent = "https://moviesrecommenderapp-by-yosuke.streamlit.app/"
 # Create a button with HTML
 st.markdown(f"""
