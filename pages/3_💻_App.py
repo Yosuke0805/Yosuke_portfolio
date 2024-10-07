@@ -39,6 +39,7 @@ st.markdown(f"""
     <a href="{url_movies}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
 """, unsafe_allow_html=True)
 
+
 # AI agent to help planning travel
 st.header("🌍 Travel plan AI agent")
 st.subheader("Discription")
@@ -55,12 +56,13 @@ You can generate your Gemini API key [here](https://aistudio.google.com/app/apik
 3. Chat with Agent!
 """
 st.markdown(description_agent)
-st.markdown("Click below button to visit my app for recommending movies!!")
+st.markdown("Click below button to visit 🌍 Travel plan AI agent!!")
 url_agent = "https://moviesrecommenderapp-by-yosuke.streamlit.app/"
 # Create a button with HTML
 st.markdown(f"""
     <a href="{url_agent}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
 """, unsafe_allow_html=True)
+
 
 # suggesting travel itinerary
 st.header("🛫 Suggesting travel itinerary")
@@ -87,6 +89,7 @@ url_itinerary = "https://lets-make-travel-itinerary-together.streamlit.app/"
 st.markdown(f"""
     <a href="{url_itinerary}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
 """, unsafe_allow_html=True)
+
 
 # summarizing meeting minutes from audio file
 st.header("📋 Summarizing meeting minutes from audio file")
@@ -116,6 +119,3 @@ url_summary = "https://summarizemeetingminutesapp-bzha9c2qlxsveh46xmeebm.streaml
 st.markdown(f"""
     <a href="{url_summary}" type="url_app" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; font-weight: bold; color: white; background-color: #FFFF00; border-radius: 5px; text-decoration: none;">Try app</a>
 """, unsafe_allow_html=True)
-
-
-
