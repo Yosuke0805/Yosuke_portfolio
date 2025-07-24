@@ -32,8 +32,6 @@ except LookupError:
 # ★★★★★★  load tokenizer from local ★★★★★★
 # ------------------------------------------------------------
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBBoaJ7cceTGRfVYaeOrT9xa7Psh9uKKL4"
-
 st.set_page_config(page_title='Yosuke Kawazoe Portfolio', layout="wide", page_icon='👧🏻')
 
 # -----------------  chatbot  ----------------- #
