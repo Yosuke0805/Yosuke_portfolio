@@ -73,7 +73,22 @@ def ask_bot(input_text):
     )
     llm_predictor = LLMPredictor(llm=llm)
     # configure settings of LLM
-    service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor)
+
+    # 1. Create the Google embedder
+    google_embed = GoogleGenerativeEmbeddings(
+        google_api_key=st.secrets["api_keys"]["GOOGLE_API_KEY"],
+        model="embedtext-multilingual-001"  # or whichever embed model you prefer
+    )
+
+    # 2. Wrap it for LlamaIndex
+    embed_model = Embeddings(google_embed.embed_query)  
+
+    # 3. Pass into ServiceContext
+    service_context = ServiceContext.from_defaults(
+        llm_predictor=llm_predictor,
+        embed_model=embed_model,
+    )
+    # service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor)
 
     # load index
     index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
