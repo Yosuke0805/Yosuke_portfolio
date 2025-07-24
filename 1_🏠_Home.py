@@ -15,12 +15,12 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 from constant import *
 
-# Fix: Ensure there's an event loop for the Streamlit script thread
-if threading.current_thread() is threading.main_thread():
-    try:
-        asyncio.get_event_loop()
-    except RuntimeError:
-        asyncio.set_event_loop(asyncio.new_event_loop())
+# Fix: Ensure there's an event loop for the Streamlit script thread:
+try:
+    asyncio.get_event_loop()
+    print("Event loop already exists.")
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
 
 # ------------------------------------------------------------
 # ★★★★★★  load tokenizer from local ★★★★★★
