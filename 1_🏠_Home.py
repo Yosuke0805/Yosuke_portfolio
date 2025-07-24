@@ -59,8 +59,8 @@ def ask_bot(input_text):
         max_tokens=None,
         timeout=None,
         max_retries=2,
-        google_api_key=api_key['GOOGLE_API_KEY'],
-        
+        google_api_key=st.secrets["api_keys"]['GOOGLE_API_KEY'],
+
     )
     llm_predictor = LLMPredictor(llm=llm)
     # configure settings of LLM
