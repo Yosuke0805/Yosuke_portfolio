@@ -13,6 +13,9 @@ from PIL import Image
 # from langchain.chat_models import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+from langchain_google_genai.embeddings import GoogleGenerativeEmbeddings
+from llama_index.embeddings import Embeddings
+
 from constant import *
 
 # Fix: Ensure there's an event loop for the Streamlit script thread:
