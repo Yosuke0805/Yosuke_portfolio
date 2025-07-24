@@ -1,5 +1,7 @@
 import base64
 
+import asyncio
+import threading
 import requests
 import streamlit as st
 import openai
@@ -12,6 +14,13 @@ from PIL import Image
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 from constant import *
+
+# Fix: Ensure there's an event loop for the Streamlit script thread
+if threading.current_thread() is threading.main_thread():
+    try:
+        asyncio.get_event_loop()
+    except RuntimeError:
+        asyncio.set_event_loop(asyncio.new_event_loop())
 
 # ------------------------------------------------------------
 # ★★★★★★  load tokenizer from local ★★★★★★
