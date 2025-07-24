@@ -187,7 +187,7 @@ with st.container():
     st.subheader('📌 My Journey Snapshot')
 
     # load data
-    with open('example.json', "r") as f:
+    with open('timeline.json', "r") as f:
         data = f.read()
 
     # render timeline
