@@ -1,2 +1,3 @@
-venv_portfolio/
+venv_portfolio*
 check_image_size.py
+.env

@@ -1,14 +1,30 @@
-import streamlit as st
+import base64
+
+import asyncio
+import threading
 import requests
+import streamlit as st
+import openai
 from streamlit_lottie import st_lottie
 from streamlit_timeline import timeline
 import streamlit.components.v1 as components
 from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor, ServiceContext
-from constant import *
 from PIL import Image
-import openai
-from langchain.chat_models import ChatOpenAI
-import base64
+# from langchain.chat_models import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+from langchain_google_genai.embeddings import GoogleGenerativeEmbeddings
+from llama_index.embeddings import Embeddings
+
+from constant import *
+
+# Fix: Ensure there's an event loop for the Streamlit script thread:
+try:
+    asyncio.get_event_loop()
+    print("Event loop already exists.")
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+
 # ------------------------------------------------------------
 # ★★★★★★  load tokenizer from local ★★★★★★
 # ------------------------------------------------------------
@@ -28,7 +44,6 @@ except LookupError:
 # ★★★★★★  load tokenizer from local ★★★★★★
 # ------------------------------------------------------------
 
-
 st.set_page_config(page_title='Yosuke Kawazoe Portfolio', layout="wide", page_icon='👧🏻')
 
 # -----------------  chatbot  ----------------- #
@@ -45,14 +60,38 @@ pronoun = info["Pronoun"]
 name = info["Name"]
 def ask_bot(input_text):
     # define LLM
-    llm = ChatOpenAI(
-        model_name="gpt-3.5-turbo",
+    # llm = ChatOpenAI(
+    #     model_name="gpt-3.5-turbo",
+    #     temperature=0,
+    #     openai_api_key=openai.api_key,
+    # )
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-1.5-pro",
         temperature=0,
-        openai_api_key=openai.api_key,
+        max_tokens=None,
+        timeout=None,
+        max_retries=2,
+        google_api_key=st.secrets["api_keys"]['GOOGLE_API_KEY'],
+
     )
     llm_predictor = LLMPredictor(llm=llm)
     # configure settings of LLM
-    service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor)
+
+    # 1. Create the Google embedder
+    google_embed = GoogleGenerativeEmbeddings(
+        google_api_key=st.secrets["api_keys"]["GOOGLE_API_KEY"],
+        model="embedtext-multilingual-001"  # or whichever embed model you prefer
+    )
+
+    # 2. Wrap it for LlamaIndex
+    embed_model = Embeddings(google_embed.embed_query)  
+
+    # 3. Pass into ServiceContext
+    service_context = ServiceContext.from_defaults(
+        llm_predictor=llm_predictor,
+        embed_model=embed_model,
+    )
+    # service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor)
 
     # load index
     index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
@@ -79,9 +118,9 @@ user_input = get_text()
 # get the response to user's questions by calling the ask_bot function
 if user_input:
   #text = st.text_area('Enter your questions')
-  if not openai_api_key.startswith('sk-'):
-    st.warning('⚠️Please enter your OpenAI API key on the sidebar.')
-  if openai_api_key.startswith('sk-'):
+#   if not openai_api_key.startswith('sk-'):
+#     st.warning('⚠️Please enter your OpenAI API key on the sidebar.')
+#   if openai_api_key.startswith('sk-'):
     try:
         st.info(ask_bot(user_input))
     except Exception as e:
@@ -166,7 +205,7 @@ with st.container():
     st.subheader('📌 My Journey Snapshot')
 
     # load data
-    with open('example.json', "r") as f:
+    with open('timeline.json', "r") as f:
         data = f.read()
 
     # render timeline
